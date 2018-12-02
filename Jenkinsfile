@@ -17,7 +17,7 @@ podTemplate(
         }
         stage ('Print') {
             container ('ubuntu') {
-                sh 'echo passing_variable'
+                sh 'echo $passing_variable'
             }
         }
     }
